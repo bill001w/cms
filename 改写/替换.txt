@@ -1,0 +1,109 @@
+1.模板替换
+
+（1）引入
+例：{template member/header}
+正则：\{template ([^\{\}/]+)/([^\{\}/]+)\}
+@include('$1\.$2') 
+
+\{template ([^\{\}/]+)\}
+@include('$1')
+
+\{\s*tpl\s+"([\$\-_\/\w\.]+)"\s*\}
+@include("$1")
+
+\{\s*include\s+(.+?)\s*\}
+@include("$1")
+
+（2）过程
+if
+例：只有1个变量情况：{if $contentpage}
+\{\s?if\s+(\$[\w_-]+)\s?\}
+@if(!empty($1))\n
+
+补充
+@if\((\$[\w\[\]\'\"_-]+)\)
+@if(!empty($1))
+
+
+
+
+\{\s?if\s+([^\}\{]+)\s?\}
+@if($1)\n
+
+\{\s?else\sif\s+([^\}\{]+)\s?\}
+@elseif($1)\n
+
+\{\s?else\s?\}
+@else\n
+
+\{\s?\/if\s?\}
+@endif\n
+
+loop
+\{\s?loop\s+\$(.+?)\s+\$(\w+?)\s?\}
+@foreach(\$$1 as \$$2)
+
+\{\s?loop\s+\$(.+?)\s+\$(\w+?)\s?=>\s?\$(\w+?)\s?\}
+@foreach(\$$1 as \$$2 => \$$3)
+
+\{\s?\/loop\s?\}
+@end
+
+（3）php
+\{php\s+([^\{\}]+)\}
+<?php $1 ?>
+
+（4）方法
+\{([a-z_0-9]+)\((.*)\)\}
+{{ $1($2) }}
+
+（5）变量
+\{([A-Z_]+)\}
+{{ $1 }}
+
+\{\$(.+?)\}
+{{ \$$1 }}
+
+\$(\w+?)\s?\.\s?(\w+)
+\$$1['$2']
+
+
+
+
+补充
+(?<!\{)\{([a-z_0-9]+)\((.*)\) \}\}(?!\})
+{{ $1($2)}}
+
+(?<!\{|\})\{\{ ([a-z_0-9]+)\((.*?)\)\}(?!\}|\{)
+{{ $1($2) }}
+
+
+
+2.php替换
+$this->post，$this->get, $request->get
+
+$this->view,$this
+$this->display,return $this->display
+
+App::,Tool::
+
+CONFIG_DIR,CONF_DIR
+
+$this->adminMsg,return $this->adminMsg
+
+category_add.blade.php114行
+@foreach($model as $t)
+                                        <option value="{{ $t['modelid'] }}" @if($t['modelid']==$data['modelid'])
+                                        selected
+                                                @endif
+                                        >{{ $t['modelname'] }}</option>
+                                        @endforeach
+			128行
+@foreach($form as $t)
+                                        <option value="{{ $t['modelid'] }}" @if($t['modelid']==$data['modelid'])
+                                        selected
+                                                @endif
+                                        >{{ $t['modelname'] }}</option>
+                                        @endforeach			
+										
+

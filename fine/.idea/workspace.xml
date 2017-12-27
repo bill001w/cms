@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d603579-3d63-46c4-9306-cbce1f11632f" name="Default" comment="" />
+    <ignored path="FineCMS.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FineCMS" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/admin/MemberController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding>
+                <element signature="n#__construct#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#148#234#0#PHP" expanded="false" />
+                <element signature="n#indexAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#369#457#0#PHP" expanded="false" />
+                <element signature="e#466#1418#0#PHP" expanded="false" />
+                <element signature="e#577#997#0#PHP" expanded="false" />
+                <element signature="e#668#987#0#PHP" expanded="false" />
+                <element signature="e#721#973#0#PHP" expanded="false" />
+                <element signature="e#998#1418#0#PHP" expanded="false" />
+                <element signature="e#1089#1408#0#PHP" expanded="false" />
+                <element signature="e#1142#1394#0#PHP" expanded="false" />
+                <element signature="e#1978#2119#0#PHP" expanded="false" />
+                <element signature="e#2047#2119#0#PHP" expanded="false" />
+                <element signature="e#3121#3544#0#PHP" expanded="false" />
+                <element signature="e#3141#3543#1#PHP" expanded="false" />
+                <element signature="e#3608#3629#0#PHP" expanded="false" />
+                <element signature="n#groupAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#3714#7461#0#PHP" expanded="false" />
+                <element signature="e#3743#4608#0#PHP" expanded="false" />
+                <element signature="e#3771#4521#0#PHP" expanded="false" />
+                <element signature="e#4621#5212#0#PHP" expanded="false" />
+                <element signature="e#4695#5054#0#PHP" expanded="false" />
+                <element signature="e#5225#5299#0#PHP" expanded="false" />
+                <element signature="e#5312#5565#0#PHP" expanded="false" />
+                <element signature="e#5578#7451#0#PHP" expanded="false" />
+                <element signature="e#5603#6498#0#PHP" expanded="false" />
+                <element signature="e#5692#6006#0#PHP" expanded="false" />
+                <element signature="e#5753#5984#0#PHP" expanded="false" />
+                <element signature="e#6068#6498#0#PHP" expanded="false" />
+                <element signature="e#6157#6437#0#PHP" expanded="false" />
+                <element signature="e#6218#6415#0#PHP" expanded="false" />
+                <element signature="e#7258#7385#0#PHP" expanded="false" />
+                <element signature="e#7278#7384#1#PHP" expanded="false" />
+                <element signature="e#7473#7495#0#PHP" expanded="false" />
+                <element signature="n#configAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#7657#9618#0#PHP" expanded="false" />
+                <element signature="e#8058#9414#0#PHP" expanded="false" />
+                <element signature="e#9627#9854#0#PHP" expanded="false" />
+                <element signature="e#9647#9853#1#PHP" expanded="false" />
+                <element signature="e#9920#9942#0#PHP" expanded="false" />
+                <element signature="n#editAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#10337#11038#0#PHP" expanded="false" />
+                <element signature="e#10562#10669#0#PHP" expanded="false" />
+                <element signature="e#10737#10927#0#PHP" expanded="false" />
+                <element signature="e#10825#10927#0#PHP" expanded="false" />
+                <element signature="e#11461#11783#0#PHP" expanded="false" />
+                <element signature="e#11481#11782#1#PHP" expanded="false" />
+                <element signature="e#11847#11869#0#PHP" expanded="false" />
+                <element signature="n#regAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#11916#16429#0#PHP" expanded="false" />
+                <element signature="e#12113#16419#0#PHP" expanded="false" />
+                <element signature="e#12359#14531#0#PHP" expanded="false" />
+                <element signature="e#12623#14513#0#PHP" expanded="false" />
+                <element signature="e#12736#12829#0#PHP" expanded="false" />
+                <element signature="e#12830#12917#0#PHP" expanded="false" />
+                <element signature="e#12918#14513#0#PHP" expanded="false" />
+                <element signature="e#13115#14491#0#PHP" expanded="false" />
+                <element signature="e#13259#14188#0#PHP" expanded="false" />
+                <element signature="e#14218#14398#0#PHP" expanded="false" />
+                <element signature="e#14324#14398#0#PHP" expanded="false" />
+                <element signature="e#14425#14491#0#PHP" expanded="false" />
+                <element signature="e#14661#16419#0#PHP" expanded="false" />
+                <element signature="e#15420#16168#0#PHP" expanded="false" />
+                <element signature="e#16186#16405#0#PHP" expanded="false" />
+                <element signature="e#16326#16405#0#PHP" expanded="false" />
+                <element signature="e#16667#16806#0#PHP" expanded="false" />
+                <element signature="e#16815#16976#0#PHP" expanded="false" />
+                <element signature="e#16835#16975#1#PHP" expanded="false" />
+                <element signature="e#17039#17060#0#PHP" expanded="false" />
+                <element signature="n#pmsAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#17192#22015#0#PHP" expanded="false" />
+                <element signature="e#17295#17480#0#PHP" expanded="false" />
+                <element signature="e#17680#17863#0#PHP" expanded="false" />
+                <element signature="e#17700#17862#1#PHP" expanded="false" />
+                <element signature="e#17963#20391#0#PHP" expanded="false" />
+                <element signature="e#17992#20141#0#PHP" expanded="false" />
+                <element signature="e#18579#20009#0#PHP" expanded="false" />
+                <element signature="e#18993#19237#0#PHP" expanded="false" />
+                <element signature="e#19260#20009#0#PHP" expanded="false" />
+                <element signature="e#19559#19987#0#PHP" expanded="false" />
+                <element signature="e#19726#19961#0#PHP" expanded="false" />
+                <element signature="e#20158#20304#0#PHP" expanded="false" />
+                <element signature="e#20178#20303#1#PHP" expanded="false" />
+                <element signature="e#20404#22005#0#PHP" expanded="false" />
+                <element signature="e#20429#20640#0#PHP" expanded="false" />
+                <element signature="e#21690#21918#0#PHP" expanded="false" />
+                <element signature="e#21710#21917#1#PHP" expanded="false" />
+                <element signature="e#22027#22050#0#PHP" expanded="false" />
+                <element signature="n#delAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#22416#22505#0#PHP" expanded="false" />
+                <element signature="e#22658#22765#0#PHP" expanded="false" />
+                <element signature="e#23257#23389#0#PHP" expanded="false" />
+                <element signature="e#23417#23544#0#PHP" expanded="false" />
+                <element signature="e#23613#23786#0#PHP" expanded="false" />
+                <element signature="e#23639#23776#0#PHP" expanded="false" />
+                <element signature="e#23871#24044#0#PHP" expanded="false" />
+                <element signature="e#23897#24034#0#PHP" expanded="false" />
+                <element signature="n#cacheAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#24643#24665#0#PHP" expanded="false" />
+                <element signature="n#extendAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#25066#31852#0#PHP" expanded="false" />
+                <element signature="e#25095#27446#0#PHP" expanded="false" />
+                <element signature="e#25133#26030#0#PHP" expanded="false" />
+                <element signature="e#25318#25577#0#PHP" expanded="false" />
+                <element signature="e#25373#25497#0#PHP" expanded="false" />
+                <element signature="e#27137#27422#0#PHP" expanded="false" />
+                <element signature="e#27157#27421#1#PHP" expanded="false" />
+                <element signature="e#27459#28528#0#PHP" expanded="false" />
+                <element signature="e#27653#28172#0#PHP" expanded="false" />
+                <element signature="e#28189#28453#0#PHP" expanded="false" />
+                <element signature="e#28209#28452#1#PHP" expanded="false" />
+                <element signature="e#28541#31842#0#PHP" expanded="false" />
+                <element signature="e#28576#29842#0#PHP" expanded="false" />
+                <element signature="e#28870#29092#0#PHP" expanded="false" />
+                <element signature="e#29093#29342#0#PHP" expanded="false" />
+                <element signature="e#29343#29592#0#PHP" expanded="false" />
+                <element signature="e#29593#29842#0#PHP" expanded="false" />
+                <element signature="e#30853#31146#0#PHP" expanded="false" />
+                <element signature="e#31432#31767#0#PHP" expanded="false" />
+                <element signature="e#31452#31766#1#PHP" expanded="false" />
+                <element signature="e#32236#32400#0#PHP" expanded="false" />
+                <element signature="e#32256#32399#1#PHP" expanded="false" />
+                <element signature="e#32449#32471#0#PHP" expanded="false" />
+                <element signature="n#testAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#32725#32848#0#PHP" expanded="false" />
+                <element signature="e#32809#32848#0#PHP" expanded="false" />
+                <element signature="e#32860#32890#0#PHP" expanded="false" />
+                <element signature="n#ajaxemailAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#33483#33516#0#PHP" expanded="false" />
+                <element signature="n#ajaxusernameAction#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#34010#34033#0#PHP" expanded="false" />
+                <element signature="n#setspace#0;n#MemberController#0;n#!!top" expanded="false" />
+                <element signature="e#34162#34228#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/admin/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+              <folding>
+                <element signature="n#synAction#0;n#UserController#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/admin/AuthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="806">
+              <caret line="109" column="29" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="29" />
+              <folding>
+                <element signature="n#listAction#0;n#AuthController#0;n#!!top" expanded="false" />
+                <element signature="n#addAction#0;n#AuthController#0;n#!!top" expanded="false" />
+                <element signature="n#editAction#0;n#AuthController#0;n#!!top" expanded="false" />
+                <element signature="n#cacheAction#0;n#AuthController#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IpController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/admin/IpController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#indexAction#0;n#IpController#0;n#!!top" expanded="false" />
+                <element signature="n#addAction#0;n#IpController#0;n#!!top" expanded="false" />
+                <element signature="n#editAction#0;n#IpController#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Common.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/admin/Common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/controllers/admin/Common.php" />
+        <option value="$PROJECT_DIR$/dayrui/database/drivers/mysqli/mysqli_driver.php" />
+        <option value="$PROJECT_DIR$/dayrui/libraries/session.class.php" />
+        <option value="$PROJECT_DIR$/dayrui/libraries/drivers/Model.php" />
+        <option value="$PROJECT_DIR$/extensions/function.php" />
+        <option value="$PROJECT_DIR$/controllers/admin/IndexController.php" />
+        <option value="$PROJECT_DIR$/views/admin/cache.html" />
+        <option value="$PROJECT_DIR$/dayrui/libraries/drivers/Controller.php" />
+        <option value="$PROJECT_DIR$/controllers/admin/ContentController.php" />
+        <option value="$PROJECT_DIR$/controllers/Common.php" />
+        <option value="$PROJECT_DIR$/controllers/admin/TagController.php" />
+        <option value="$PROJECT_DIR$/models/TagModel.php" />
+        <option value="$PROJECT_DIR$/controllers/admin/MemberController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="fine">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="fine">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controllers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="fine">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="controllers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="admin">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="fine">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="cache">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../m-cms" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="SearchEverywhereHistoryKey" value="category_add&#9;FILE&#9;file://F:/work/cms/fine/views/admin/category_add.html&#10;cache&#9;FILE&#9;file://F:/work/cms/fine/views/admin/cache.html&#10;Model&#9;null&#9;null&#10;ModelController&#9;null&#9;null&#10;auth&#9;FILE&#9;file://F:/work/cms/fine/dayrui/libraries/auth.class.php&#10;hooks&#9;FILE&#9;file://F:/work/cms/FineCMS/extensions/config/hooks.php" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d603579-3d63-46c4-9306-cbce1f11632f" name="Default" comment="" />
+      <created>1509090914632</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509090914632</updated>
+      <workItem from="1509090916128" duration="3467000" />
+      <workItem from="1509180923056" duration="6824000" />
+      <workItem from="1509242104544" duration="9761000" />
+      <workItem from="1509324738659" duration="4710000" />
+      <workItem from="1509330179574" duration="13184000" />
+      <workItem from="1509404972138" duration="9822000" />
+      <workItem from="1509458625709" duration="63000" />
+      <workItem from="1509459995268" duration="2151000" />
+      <workItem from="1509522808286" duration="243000" />
+      <workItem from="1509526992543" duration="109000" />
+      <workItem from="1509544783541" duration="523000" />
+      <workItem from="1509629284142" duration="1199000" />
+      <workItem from="1509798855641" duration="150000" />
+      <workItem from="1509799212466" duration="745000" />
+      <workItem from="1509846272787" duration="1136000" />
+      <workItem from="1509848976097" duration="1086000" />
+      <workItem from="1509868292667" duration="4930000" />
+      <workItem from="1509939086072" duration="647000" />
+      <workItem from="1509953616762" duration="2614000" />
+      <workItem from="1509957884525" duration="117000" />
+      <workItem from="1510021383338" duration="5972000" />
+      <workItem from="1510105964395" duration="600000" />
+      <workItem from="1510111722768" duration="3932000" />
+      <workItem from="1510198816044" duration="3403000" />
+      <workItem from="1510315465382" duration="1803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="79191000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21641791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37337664" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20788912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37337664" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/extensions/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/core/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/core/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/Session/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="570" column="54" selection-start-line="570" selection-start-column="54" selection-end-line="570" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/core/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/session.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/helpers/language_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/database/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/core/Loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="336" column="69" selection-start-line="336" selection-start-column="69" selection-end-line="336" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/database/drivers/mysqli/mysqli_driver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/core/CodeIgniter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="221" column="15" selection-start-line="221" selection-start-column="15" selection-end-line="221" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/drivers/App.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="354" column="1" selection-start-line="354" selection-start-column="1" selection-end-line="354" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/core/Lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/database/DB_driver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="257" column="33" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/data/model_content_1.cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/cache_file.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/client.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/auth.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/admin.menu.ini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="91" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/drivers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="275" column="35" selection-start-line="275" selection-start-column="35" selection-end-line="275" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ModelModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/ModelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="544" column="73" selection-start-line="544" selection-start-column="59" selection-end-line="544" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensions/fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="410" column="53" selection-start-line="410" selection-start-column="53" selection-end-line="410" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/SearchModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="199" column="21" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dayrui/libraries/drivers/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="814" column="18" selection-start-line="814" selection-start-column="18" selection-end-line="814" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TagModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/TagController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/TagController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="118" column="12" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.ini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/cache.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="66" column="36" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2418">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/data/category_dir_1.cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/BlockController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/ContentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="887" column="23" selection-start-line="887" selection-start-column="23" selection-end-line="887" selection-end-column="23" />
+          <folding>
+            <marker date="1509871426268" expanded="true" signature="5080:5985" ph="..." />
+            <marker date="1509871426268" expanded="true" signature="5205:5943" ph="..." />
+            <marker date="1509871426268" expanded="true" signature="17324:17336" ph="..." />
+            <marker date="1509871426268" expanded="true" signature="17636:18001" ph="..." />
+            <marker date="1509871426268" expanded="true" signature="17683:17935" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensions/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1494">
+          <caret line="207" column="17" selection-start-line="207" selection-start-column="17" selection-end-line="207" selection-end-column="17" />
+          <folding>
+            <marker date="1509425506858" expanded="true" signature="299:2755" ph="..." />
+            <marker date="1509425506858" expanded="true" signature="377:2744" ph="..." />
+            <marker date="1509425506858" expanded="true" signature="437:1107" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="861:1092" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="979:1074" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="1155:1496" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="1200:1397" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="1707:2401" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="1777:2387" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="1839:2171" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="1923:2142" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="1974:2116" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="2209:2263" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="2301:2369" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="2425:2726" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="2613:2712" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="41174:41764" ph="..." />
+            <marker date="1509425506858" expanded="true" signature="41192:41753" ph="{...}" />
+            <marker date="1509425506858" expanded="true" signature="41513:41747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/category_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="136" column="28" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cache/data/model_member.cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding>
+            <element signature="n#__construct#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#148#234#0#PHP" expanded="false" />
+            <element signature="n#indexAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#369#457#0#PHP" expanded="false" />
+            <element signature="e#466#1418#0#PHP" expanded="false" />
+            <element signature="e#577#997#0#PHP" expanded="false" />
+            <element signature="e#668#987#0#PHP" expanded="false" />
+            <element signature="e#721#973#0#PHP" expanded="false" />
+            <element signature="e#998#1418#0#PHP" expanded="false" />
+            <element signature="e#1089#1408#0#PHP" expanded="false" />
+            <element signature="e#1142#1394#0#PHP" expanded="false" />
+            <element signature="e#1978#2119#0#PHP" expanded="false" />
+            <element signature="e#2047#2119#0#PHP" expanded="false" />
+            <element signature="e#3121#3544#0#PHP" expanded="false" />
+            <element signature="e#3141#3543#1#PHP" expanded="false" />
+            <element signature="e#3608#3629#0#PHP" expanded="false" />
+            <element signature="n#groupAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#3714#7461#0#PHP" expanded="false" />
+            <element signature="e#3743#4608#0#PHP" expanded="false" />
+            <element signature="e#3771#4521#0#PHP" expanded="false" />
+            <element signature="e#4621#5212#0#PHP" expanded="false" />
+            <element signature="e#4695#5054#0#PHP" expanded="false" />
+            <element signature="e#5225#5299#0#PHP" expanded="false" />
+            <element signature="e#5312#5565#0#PHP" expanded="false" />
+            <element signature="e#5578#7451#0#PHP" expanded="false" />
+            <element signature="e#5603#6498#0#PHP" expanded="false" />
+            <element signature="e#5692#6006#0#PHP" expanded="false" />
+            <element signature="e#5753#5984#0#PHP" expanded="false" />
+            <element signature="e#6068#6498#0#PHP" expanded="false" />
+            <element signature="e#6157#6437#0#PHP" expanded="false" />
+            <element signature="e#6218#6415#0#PHP" expanded="false" />
+            <element signature="e#7258#7385#0#PHP" expanded="false" />
+            <element signature="e#7278#7384#1#PHP" expanded="false" />
+            <element signature="e#7473#7495#0#PHP" expanded="false" />
+            <element signature="n#configAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#7657#9618#0#PHP" expanded="false" />
+            <element signature="e#8058#9414#0#PHP" expanded="false" />
+            <element signature="e#9627#9854#0#PHP" expanded="false" />
+            <element signature="e#9647#9853#1#PHP" expanded="false" />
+            <element signature="e#9920#9942#0#PHP" expanded="false" />
+            <element signature="n#editAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#10337#11038#0#PHP" expanded="false" />
+            <element signature="e#10562#10669#0#PHP" expanded="false" />
+            <element signature="e#10737#10927#0#PHP" expanded="false" />
+            <element signature="e#10825#10927#0#PHP" expanded="false" />
+            <element signature="e#11461#11783#0#PHP" expanded="false" />
+            <element signature="e#11481#11782#1#PHP" expanded="false" />
+            <element signature="e#11847#11869#0#PHP" expanded="false" />
+            <element signature="n#regAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#11916#16429#0#PHP" expanded="false" />
+            <element signature="e#12113#16419#0#PHP" expanded="false" />
+            <element signature="e#12359#14531#0#PHP" expanded="false" />
+            <element signature="e#12623#14513#0#PHP" expanded="false" />
+            <element signature="e#12736#12829#0#PHP" expanded="false" />
+            <element signature="e#12830#12917#0#PHP" expanded="false" />
+            <element signature="e#12918#14513#0#PHP" expanded="false" />
+            <element signature="e#13115#14491#0#PHP" expanded="false" />
+            <element signature="e#13259#14188#0#PHP" expanded="false" />
+            <element signature="e#14218#14398#0#PHP" expanded="false" />
+            <element signature="e#14324#14398#0#PHP" expanded="false" />
+            <element signature="e#14425#14491#0#PHP" expanded="false" />
+            <element signature="e#14661#16419#0#PHP" expanded="false" />
+            <element signature="e#15420#16168#0#PHP" expanded="false" />
+            <element signature="e#16186#16405#0#PHP" expanded="false" />
+            <element signature="e#16326#16405#0#PHP" expanded="false" />
+            <element signature="e#16667#16806#0#PHP" expanded="false" />
+            <element signature="e#16815#16976#0#PHP" expanded="false" />
+            <element signature="e#16835#16975#1#PHP" expanded="false" />
+            <element signature="e#17039#17060#0#PHP" expanded="false" />
+            <element signature="n#pmsAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#17192#22015#0#PHP" expanded="false" />
+            <element signature="e#17295#17480#0#PHP" expanded="false" />
+            <element signature="e#17680#17863#0#PHP" expanded="false" />
+            <element signature="e#17700#17862#1#PHP" expanded="false" />
+            <element signature="e#17963#20391#0#PHP" expanded="false" />
+            <element signature="e#17992#20141#0#PHP" expanded="false" />
+            <element signature="e#18579#20009#0#PHP" expanded="false" />
+            <element signature="e#18993#19237#0#PHP" expanded="false" />
+            <element signature="e#19260#20009#0#PHP" expanded="false" />
+            <element signature="e#19559#19987#0#PHP" expanded="false" />
+            <element signature="e#19726#19961#0#PHP" expanded="false" />
+            <element signature="e#20158#20304#0#PHP" expanded="false" />
+            <element signature="e#20178#20303#1#PHP" expanded="false" />
+            <element signature="e#20404#22005#0#PHP" expanded="false" />
+            <element signature="e#20429#20640#0#PHP" expanded="false" />
+            <element signature="e#21690#21918#0#PHP" expanded="false" />
+            <element signature="e#21710#21917#1#PHP" expanded="false" />
+            <element signature="e#22027#22050#0#PHP" expanded="false" />
+            <element signature="n#delAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#22416#22505#0#PHP" expanded="false" />
+            <element signature="e#22658#22765#0#PHP" expanded="false" />
+            <element signature="e#23257#23389#0#PHP" expanded="false" />
+            <element signature="e#23417#23544#0#PHP" expanded="false" />
+            <element signature="e#23613#23786#0#PHP" expanded="false" />
+            <element signature="e#23639#23776#0#PHP" expanded="false" />
+            <element signature="e#23871#24044#0#PHP" expanded="false" />
+            <element signature="e#23897#24034#0#PHP" expanded="false" />
+            <element signature="n#cacheAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#24643#24665#0#PHP" expanded="false" />
+            <element signature="n#extendAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#25066#31852#0#PHP" expanded="false" />
+            <element signature="e#25095#27446#0#PHP" expanded="false" />
+            <element signature="e#25133#26030#0#PHP" expanded="false" />
+            <element signature="e#25318#25577#0#PHP" expanded="false" />
+            <element signature="e#25373#25497#0#PHP" expanded="false" />
+            <element signature="e#27137#27422#0#PHP" expanded="false" />
+            <element signature="e#27157#27421#1#PHP" expanded="false" />
+            <element signature="e#27459#28528#0#PHP" expanded="false" />
+            <element signature="e#27653#28172#0#PHP" expanded="false" />
+            <element signature="e#28189#28453#0#PHP" expanded="false" />
+            <element signature="e#28209#28452#1#PHP" expanded="false" />
+            <element signature="e#28541#31842#0#PHP" expanded="false" />
+            <element signature="e#28576#29842#0#PHP" expanded="false" />
+            <element signature="e#28870#29092#0#PHP" expanded="false" />
+            <element signature="e#29093#29342#0#PHP" expanded="false" />
+            <element signature="e#29343#29592#0#PHP" expanded="false" />
+            <element signature="e#29593#29842#0#PHP" expanded="false" />
+            <element signature="e#30853#31146#0#PHP" expanded="false" />
+            <element signature="e#31432#31767#0#PHP" expanded="false" />
+            <element signature="e#31452#31766#1#PHP" expanded="false" />
+            <element signature="e#32236#32400#0#PHP" expanded="false" />
+            <element signature="e#32256#32399#1#PHP" expanded="false" />
+            <element signature="e#32449#32471#0#PHP" expanded="false" />
+            <element signature="n#testAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#32725#32848#0#PHP" expanded="false" />
+            <element signature="e#32809#32848#0#PHP" expanded="false" />
+            <element signature="e#32860#32890#0#PHP" expanded="false" />
+            <element signature="n#ajaxemailAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#33483#33516#0#PHP" expanded="false" />
+            <element signature="n#ajaxusernameAction#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#34010#34033#0#PHP" expanded="false" />
+            <element signature="n#setspace#0;n#MemberController#0;n#!!top" expanded="false" />
+            <element signature="e#34162#34228#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="109" column="29" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="29" />
+          <folding>
+            <element signature="n#listAction#0;n#AuthController#0;n#!!top" expanded="false" />
+            <element signature="n#addAction#0;n#AuthController#0;n#!!top" expanded="false" />
+            <element signature="n#editAction#0;n#AuthController#0;n#!!top" expanded="false" />
+            <element signature="n#cacheAction#0;n#AuthController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/IpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#indexAction#0;n#IpController#0;n#!!top" expanded="false" />
+            <element signature="n#addAction#0;n#IpController#0;n#!!top" expanded="false" />
+            <element signature="n#editAction#0;n#IpController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/admin/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+          <folding>
+            <element signature="n#synAction#0;n#UserController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

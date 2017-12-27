@@ -1,0 +1,5 @@
+fn_model_field表的setting中的content为
+
+category表中的catdir是干嘛使得？
+
+viewtool中的$table = $models[$cats[$row['catid']]['modelid']]['tablename'];非常值得注意

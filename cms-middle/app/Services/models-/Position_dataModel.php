@@ -1,0 +1,70 @@
+<?php namespace App\Services\models;
+
+class Position_dataModel extends Model
+{
+    public function get_primary_key()
+    {
+        return $this->primary_key = 'id';
+    }
+
+    public function set($id, $data)
+    {
+        $data['catid'] = (int)$data['catid'];
+
+        if ($id) {
+            $check = $this->where('id<>' . $id)->where('catid=' . (int)$data['catid'])->where('posid=' . $data['posid'])->where('contentid=' . (int)$data['contentid'])->select(false);
+            if ($data['contentid'] && $check) return false;
+            $data['contentid'] = intval($data['contentid']);
+
+            $this->update($data, 'id=' . $id);
+            $this->updateContentAndUrl($data);
+
+            return true;
+        }
+
+        if ($data['contentid'] && $data['catid']) {
+            $check = $this->where('catid=' . (int)$data['catid'])->where('posid=' . $data['posid'])->where('contentid=' . (int)$data['contentid'])->select(false);
+            if ($check) return false;
+        }
+
+        $data['contentid'] = intval($data['contentid']);
+        $this->insert($data);
+        if (!$this->get_insert_id()) return false;
+
+        $this->updateContentAndUrl($data);
+
+        return true;
+    }
+
+    private function updateContentAndUrl($data)
+    {
+        if (empty($data['contentid'])) return false;
+
+        $table = 'content';
+        $content = $this->from($table)->where('id=' . $data['contentid'])->select(false);
+        if (empty($content)) return false;
+
+        $position = @explode(',', $content['position']);
+        $update = array();
+        if (empty($position)) {
+            $update = array($data['posid']);
+        } else {
+            foreach ($position as $p) {
+                if ($p) $update[] = $p;
+            }
+            $update[] = $data['posid'];
+            $update = array_unique($update);
+        }
+        $update = @implode(',', $update);
+        $this->query('update ' . $this->prefix . $table . ' set position="' . $update . '" where id=' . $data['contentid']);
+
+        $this->query('update ' . $this->prefix . 'position_data set url="' . $content['url'] . '" where contentid=' . $data['contentid']);
+    }
+
+    public function del($posid)
+    {
+        $this->delete('posid=' . $posid);
+        $table = $this->prefix . 'position_data';
+        $this->query('delete from ' . $table . ' where posid=' . $posid);
+    }
+}

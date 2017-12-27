@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://www.dayrui.net/show-7706.html -->
+<html><style type="text/css" id="86310676157"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+<title>插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind</title>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="generator" content="phpwind v9.0 20130227">
+<meta name="description" content="一、插件类型介绍
+FineCMS插件目前分为“内置控制器”、“页面嵌入”。
+1、内置控制器类型插件。
+">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/core.css">
+<link rel="stylesheet" href="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/style.css">
+<!-- <base id="headbase" href="http://www.dayrui.net/" /> -->
+<style>body{font-family:'Microsoft Yahei';}</style><script>
+//全局变量 Global Variables
+var GV = {
+	JS_ROOT : 'http://www.dayrui.net/res/js/dev/',										//js目录
+	JS_VERSION : '20130227',											//js版本号(不能带空格)
+	JS_EXTRES : 'http://www.dayrui.net/themes/extres',
+	TOKEN : '8014009d387fbd34',	//token $.ajaxSetup data
+	U_CENTER : 'http://www.dayrui.net/space-index-run',		//用户空间(参数 : uid)
+	U_AVATAR_DEF : 'http://www.dayrui.net/res/images/face/face_small.jpg',					//默认小头像
+	U_ID : parseInt('0'),									//uid
+	REGION_CONFIG : '',														//地区数据
+	CREDIT_REWARD_JUDGE : '',			//是否积分奖励，空值:false, 1:true
+	URL : {
+		LOGIN : 'http://www.dayrui.net/u-login-run',										//登录地址
+		QUICK_LOGIN : 'http://www.dayrui.net/u-login-fast',								//快速登录
+		IMAGE_RES: 'http://www.dayrui.net/res/images',										//图片目录
+		CHECK_IMG : 'http://www.dayrui.net/u-login-showverify',							//验证码图片url，global.js引用
+		VARIFY : 'http://www.dayrui.net/verify-index-get',									//验证码html
+		VARIFY_CHECK : 'http://www.dayrui.net/verify-index-check',							//验证码html
+		HEAD_MSG : {
+			LIST : 'http://www.dayrui.net/message-notice-minilist'							//头部消息_列表
+		},
+		USER_CARD : 'http://www.dayrui.net/space-card-run',								//小名片(参数 : uid)
+		LIKE_FORWARDING : 'http://www.dayrui.net/bbs-post-doreply',							//喜欢转发(参数 : fid)
+		REGION : 'http://www.dayrui.net/misc-webData-area',									//地区数据
+		SCHOOL : 'http://www.dayrui.net/misc-webData-school',								//学校数据
+		EMOTIONS : "http://www.dayrui.net/emotion-index-run?type=bbs",					//表情数据
+		CRON_AJAX : '',											//计划任务 后端输出执行
+		FORUM_LIST : 'http://www.dayrui.net/bbs-forum-list',								//版块列表数据
+		CREDIT_REWARD_DATA : 'http://www.dayrui.net/u-index-showcredit',					//积分奖励 数据
+		AT_URL: 'http://www.dayrui.net/bbs-remind-run',									//@好友列表接口
+		TOPIC_TYPIC: 'http://www.dayrui.net/bbs-forum-topictype'							//主题分类
+	}
+};
+</script>
+<script src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/wind.js"></script>
+	<link href="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/forum.css" rel="stylesheet">
+	<link href="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/editor_content.css" rel="stylesheet">
+<style>
+.aPre{
+	cursor:url(http://www.dayrui.net/themes/site/default/images/common/pre.cur),auto;
+}
+.aNext{
+	cursor:url(http://www.dayrui.net/themes/site/default/images/common/next.cur),auto;right:0;
+}
+</style><script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/jquery.js"></script><script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/global.js"></script><script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/dialog.js"></script><script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/userTag.js"></script><script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/read.js"></script><script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/localStorage.js"></script><script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/textCopy.js"></script>
+</head>
+<body>
+<style type="text/css">
+</style><div class="wrap">
+	<header class="header_wrap">
+	<div id="J_header" class="header cc">
+		<div class="logo">
+			<a href="http://www.dayrui.net/">
+								<!--后台logo上传-->
+				<img src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/3c7c1237d083756.png" alt="FineCMS企业版">
+							</a>
+		</div>
+		<nav class="nav_wrap">
+			<div class="nav">
+				<ul>
+						<li class=""><a href="http://www.dayrui.net/index.php">首页</a></li>
+						<li class=""><a href="http://www.dayrui.net/list-58.html">论坛</a></li>
+						<li class=""><a href="http://www.dayrui.net/list-114.html">手册</a></li>
+						<li class="current"><a href="http://www.dayrui.net/list-114.html">文档</a></li>
+						<li class=""><a href="http://git.oschina.net/dayrui/finecms/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=">bug提交</a></li>
+						<li class=""><a href="http://store.dayrui.com/index.php?c=category&id=14" target="_blank" style="color:#fac08f;font-weight:bold;">模板下载</a></li>
+					</ul>
+			</div>
+		</nav>
+				<div class="header_search" role="search">
+			<form action="http://www.dayrui.net/search-s-run" method="post">
+				<input type="text" id="s" aria-label="搜索关键词" accesskey="s" placeholder="搜索其实很简单" x-webkit-speech="" speech="" name="keyword">
+				<button type="submit" aria-label="搜索"><span>搜索</span></button>
+			<input type="hidden" name="csrf_token" value="8014009d387fbd34"><input type="hidden" name="csrf_token" value="8014009d387fbd34"></form>
+		</div>
+		<div class="header_login">
+	<a rel="nofollow" href="http://www.dayrui.net/u-login-run">登录</a><a rel="nofollow" href="http://i.dayrui.com/register.html" target="_blank">注册</a>
+</div>
+
+	</div>
+</header>
+<div class="tac"> </div>
+
+<script type="text/javascript" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/jquery.min.js"></script>
+<script>
+$.ajax({type: "GET", url:"http://www.dayrui.com/index.php?c=bbs", dataType:'jsonp', success: function (data) {
+	if (data.html == 'back') {
+		window.location.href = 'http://i.dayrui.com';
+	}
+	if (data.html == 'phone') {
+		window.location.href = 'http://i.dayrui.com/index.php?c=account&m=index';
+	}
+	
+}});
+</script>
+	<div class="main_wrap">
+		
+		<div class="bread_crumb">
+			<a href="http://www.dayrui.net/" title="FineCMS企业版" class="home">首页</a><em>&gt;</em><a href="http://www.dayrui.net/list-58.html">FineCMS企业版</a><em>&gt;</em><a href="http://www.dayrui.net/list-114.html">帮助手册</a><em>&gt;</em><a href="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind.html">插件开发指南</a>		</div>
+		
+		<div id="app_test"></div>
+		<div id="cloudwind_read_top"></div>
+		<div class="read_pages_wrap cc">
+						<a rel="nofollow" href="http://www.dayrui.net/bbs-post-reply?tid=7706" data-referer="true" class="btn_replay J_qlogin_trigger">回复</a>
+						<div class="pages" style="margin-right:3px;"><a href="http://www.dayrui.net/list-114-1.html" class="pages_pre" rel="nofollow">« 返回列表</a></div>
+					</div>
+		<input type="hidden" id="js-tid" value="$tid">
+		<div class="read_page" id="J_posts_list">
+						<a name="0"></a><a name="a"></a>			<div id="cloudwind_read_readfloor_0"></div>
+<div class="floor cc J_read_floor" id="read_0">
+<table width="100%" style="table-layout:fixed;" class="floor_table">
+	<tbody><tr>
+		<td rowspan="2" class="floor_left">
+			<div class="floor_info">
+				<!--头像-->
+				<div class="face">
+					<a href="http://www.dayrui.net/u-1.html" class="J_user_card_show" data-uid="1" target="_blank"><img src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/1_middle.jpg" class="J_avatar" data-type="middle" alt="dayrui"></a>
+				</div>
+				<!--用户名-->
+				<div class="name">
+					<span class="man_unol" title="离线"></span><a href="http://www.dayrui.net/u-1.html" class="J_user_card_show mr5" data-uid="1">dayrui</a>
+									</div>
+				<!--等级-->
+				<div class="level">
+					<div>罗氏团队</div>
+					<img src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/20.gif" alt="罗氏团队">
+				</div>
+				<!--相关数据-->
+				<ul class="cc integral">
+								</ul>
+								<!--发私信加关注-->
+				<div class="operate cc">
+					<a rel="nofollow" href="http://www.dayrui.net/my-follow-add" data-uid="1" class="follow J_read_follow J_qlogin_trigger">加关注</a>
+					<a rel="nofollow" href="http://www.dayrui.net/message-message-pop?username=dayrui" class="message J_send_msg_pop J_qlogin_trigger" data-name="dayrui">写私信</a>
+									</div>
+								<!--广告位-->
+				 
+				<!--信息栏结束-->
+			</div>
+		</td>
+		<td class="box_wrap floor_right">
+			<div class="fl"><div class="floor_arrow"><em></em><span></span></div></div>
+						<div class="floor_title cc">
+				<div class="post_num">
+					<span class="hits">阅读：<em>862</em></span><span class="replies">回复：<em id="topicRepliesNum">0</em></span>
+				</div>
+				<h1 id="J_post_title">插件开发指南</h1>
+				<span class="floor_honor posts_icon">
+									</span>
+			</div>
+						<div class="c"></div>
+			<div class="floor_top_tips cc">
+				<div style="position:relative;"><span class="lou J_floor_copy" title="复制此楼地址" data-type="main" data-hash="read_0">楼主<sup>#</sup></span></div>
+								<a href="javascript:;" class="more_down" id="J_read_moredown">更多</a>
+				<div id="J_read_moredown_list" class="core_menu" style="display:none;">
+					<ul class="core_menu_list">
+						<li><a rel="nofollow" href="http://www.dayrui.net/show-7706.html?uid=1">只看楼主</a></li>
+						<li><a rel="nofollow" href="http://www.dayrui.net/show-7706.html?desc=1">倒序阅读</a></li>
+					</ul>
+				</div>
+								<span class="fl">发布于：2015-12-16 11:00				</span>
+			</div>
+						<div id="J_read_main">
+				 
+								<div id="J_read_tag_wrap" class="read_tag_list">
+									</div>
+				<!--=========话题编辑=========-->
+				<div id="J_read_tag_edit" class="mb10 cc" style="display:none;">
+					<form id="J_read_tag_form" action="http://www.dayrui.net/tag-index-editReadTag?tid=7706" method="post">
+						<div class="user_select_input J_user_tag_wrap fl mr10">
+							<ul class="fl J_user_tag_ul"></ul>
+							<input class="J_user_tag_input" data-name="tagnames[]" type="text">
+						</div>
+						<button id="J_read_tag_sub" class="btn btn_submit">保存</button>
+					<input type="hidden" name="csrf_token" value="8014009d387fbd34"><input type="hidden" name="csrf_token" value="8014009d387fbd34"></form>
+				</div>
+								<div class="fr">
+				<!--开始右侧广告位-->
+					 
+				<!--结束右侧广告位-->
+				</div>
+				<div class="editor_content">
+					<span style="color:#444444 "><b>一、插件类型介绍</b>
+<br>FineCMS插件目前分为“内置控制器”、“页面嵌入”。
+<br>1、内置控制器类型插件。
+<br>有独立的控制器、模型、视图目录，后面将重点介绍该类型插件开发。
+<br>2、页面嵌入类型插件。
+<br>该类型插件只包含两个核心文件：run.php和run.html。</span>
+<br><span style="color:#444444 "><b>二、“内置控制器”插件开发介绍</b></span>
+<br><span style="color:#444444 ">1、插件文件及目录结构
+<br>目录controllers： &nbsp; &nbsp; 插件控制器目录
+<br>目录models： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;插件模型目录
+<br>目录views： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 插件视图目录
+<br>文件config.php： &nbsp; &nbsp; 插件配置信息文件
+<br>文件install.php： &nbsp; &nbsp; &nbsp;安装插件执行的SQL语句
+<br>文件uninstall.php：删除插件执行的SQL语句
+<br>文件md5.php： &nbsp; &nbsp; &nbsp; &nbsp;MD5校验文件，官方校验文件
+<br>文件mark.txt： &nbsp; &nbsp; &nbsp; &nbsp; 官方发布插件的唯一标示，若是自己开发的插件就不需要该文件</span>
+<br><span style="color:#444444 ">2、插件访问路径
+<br>网站地址/index.php?s=插件名称&amp;c=插件控制器&amp;a=对应的Action。</span>
+<br><span style="color:#444444 ">3、插件配置文件config.php规则</span>
+<br><span style="color:blue ">&lt;?php
+<br>return array(
+<br>'name' =&gt; '文章踩顶',
+<br>'author' =&gt; 'start',
+<br>'version' =&gt; '1.0',
+<br>'typeid' =&gt; 1,
+<br>'description' =&gt; "必须有Jquery支持，将下面代码放在内容页面中",
+<br>'fields' =&gt; array(
+<br>array('field'=&gt;'dingname', 'name'=&gt;'“顶”名称设置', 'tips'=&gt;'默认“顶一下”。', 'formtype'=&gt;'input', 'setting'=&gt;"array('size'=&gt;'100')"),
+<br>array('field'=&gt;'cainame', 'name'=&gt;'“踩”名称设置', 'tips'=&gt;'默认“踩一下”。', 'formtype'=&gt;'input', 'setting'=&gt;"array('size'=&gt;'100')"),
+<br>)
+<br>);</span>
+<br><span style="color:#444444 ">
+<br>该配置文件返回数组格式信息，参数如下介绍。
+<br>name： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;插件名称。
+<br>author： &nbsp; &nbsp; &nbsp; &nbsp;插件作者。
+<br>version： &nbsp; &nbsp; &nbsp; 插件版本。
+<br>typeid： &nbsp; &nbsp; &nbsp; &nbsp; 1，（固定格式值）。
+<br>description： 插件描述信息（注意html转义）。
+<br>fields： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;插件配置参数（若没有配置信息设置，该值可省略）。
+<br>array('field'=&gt;'字段名称', 'name'=&gt;'字段显示名称', 'tips'=&gt;'提醒文字', 'formtype'=&gt;'字段类型（可参考扩展目录的fields.php文件）', 'setting'=&gt;"该字段类型的配置信息"),</span>
+<br><span style="color:#444444 ">4、插件安装/卸载文件规则
+<br>(1)、安装文件install.php</span>
+<br><span style="color:blue ">&lt;?php
+<br>if (!defined('IN_FINECMS')) exit('');
+<br>return array(
+<br>"DROP TABLE IF EXISTS `{prefix}digg`;",
+<br>"CREATE TABLE IF NOT EXISTS `{prefix}digg` (
+<br>`id` mediumint(8) NOT NULL AUTO_INCREMENT,
+<br>`contentid` mediumint(8) NOT NULL,
+<br>`title` varchar(100) NOT NULL,
+<br>`cai` mediumint(8) NOT NULL,
+<br>`ding` mediumint(8) NOT NULL,
+<br>`addtime` int(10) NOT NULL,
+<br>PRIMARY KEY (`id`)
+<br>) ENGINE=MyISAM DEFAULT CHARSET=utf8;"
+<br>);</span>
+<br><span style="color:#444444 ">
+<br>支持多条SQL语句，数据表前缀请用“{prefix}”表示。</span>
+<br><span style="color:#444444 ">(2)插件卸载uninstall.php</span>
+<br><span style="color:blue ">&lt;?php
+<br>if (!defined('IN_FINECMS')) exit('');
+<br>return array(
+<br>"DROP TABLE IF EXISTS `{prefix}digg`;"
+<br>);</span>
+<br><span style="color:#444444 ">
+<br>5、插件控制器controllers规则
+<br>(1)、插件公共控制器类Common.php。</span>
+<br><span style="color:blue ">&lt;?php
+<br>/**
+<br>* 插件控制器公共类
+<br>*/
+<br>class Plugin extends Common { //继承通用公共类
+<br>
+<br>protected $plugin; //插件模型
+<br>protected $data; //插件数据
+<br>protected $viewpath; //视图目录
+<br>protected $digg; //用到的插件模型实例
+<br>
+<br>public function __construct() {
+<br>parent::__construct();
+<br>$this-&gt;plugin = $this-&gt;model('plugin');
+<br>$this-&gt;data = $this-&gt;plugin-&gt;where('dir=?', $this-&gt;namespace)-&gt;select(false);
+<br>if (empty($this-&gt;data)) $this-&gt;adminMsg('插件尚未安装', url('admin/plugin'));
+<br>if ($this-&gt;data['disable']) $this-&gt;adminMsg('插件尚未开启', url('admin/plugin'));
+<br>$this-&gt;viewpath = SITE_PATH . $this-&gt;site['PLUGIN_DIR'] . '/' . $this-&gt;data['dir'] . '/views/';
+<br>$this-&gt;assign(array(
+<br>'viewpath' =&gt; $this-&gt;viewpath,
+<br>'pluginid' =&gt; $this-&gt;data['pluginid'], 
+<br>));
+<br>//以上代码为固定格式，用户在开发插件时，可以直接copy。
+<br>$this-&gt;digg = $this-&gt;model('digg'); //实例化用到的模型
+<br>}
+<br>
+<br>}</span>
+<br><span style="color:#444444 ">
+<br>插件控制器公共类用于实例化该插件用到的模型，或者该插件用到的函数等。
+<br>(2)、控制器Controller介绍 </span>
+<br><span style="color:blue ">&lt;?php
+<br>class AdminController extends Plugin { //AdminController继承公共插件类
+<br>
+<br>public function __construct() {
+<br>parent::__construct();
+<br>//Admin控制器进行登录验证
+<br>if (!$this-&gt;session-&gt;is_set('user_id') || !$this-&gt;session-&gt;get('user_id')) $this-&gt;adminMsg('请登录以后再操作', url('admin/login')); //如果需要管理员登陆验证，就加上这一句。
+<br>}
+<br>
+<br>public function indexAction() {
+<br>echo "插件indexAction，欢迎使用FineCMS插件。";
+<br>}
+<br>}</span>
+<br><span style="color:#444444 ">
+<br>加载视图文件和赋值变量与主控制器不同以外，其他规则与Controller一致。
+<br>变量赋值：$this-&gt;assign(变量名称, 变量值); $this-&gt;assign(支持数组);
+<br>加载视图：$this-&gt;display(视图文件名称（不带扩展名）);例如：$htis-&gt;display('test');//插件目录/views/test.php</span>
+<br><span style="color:#444444 ">(3)、插件模型models介绍
+<br>与系统模型规则一致。</span>
+<br><span style="color:#444444 ">(4)、插件视图views介绍
+<br>只支持原生态PHP语句，不支持模板标签。</span>				</div>
+							</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="box_wrap floor_bottom" valign="bottom">
+					<div class="read_appbtn_wrap">
+								<a role="button" rel="nofollow" href="http://www.dayrui.net/like-mylike-doLike" data-tid="7706" data-pid="0" data-fid="114" class="icon_read_like J_like_btn J_qlogin_trigger" data-role="main" data-typeid="1" data-fromid="7706">
+					<span>喜欢</span><em class="J_like_count">0</em>
+				</a>
+							</div>
+						<div style="display:none" id="J_read_like_list" class="read_like_list cc">
+				<h4 class="J_read_like_tit">最新喜欢：</h4>
+							</div>
+						<div id="app_read_floor_0"></div>
+						<div id="cloudwind_read_content"></div>
+				
+			<div class="floor_bottom_tips cc">
+								<span class="fr">
+									</span>
+								<a rel="nofollow" href="http://www.dayrui.net/show-7706.html#floor_reply" data-hash="floor_reply" class="a_reply" id="J_readreply_main">回复</a>
+							</div>
+			<div style="display:none;" class="J_reply_wrap" id="J_reply_wrap_0"><div class="pop_loading"></div></div>
+		</td>
+	</tr>
+</tbody></table>
+</div>
+			<div class="read_pages_wrap cc" id="floor_reply">
+				<a rel="nofollow" href="http://www.dayrui.net/bbs-post-run?fid=114" id="J_read_post_btn" class="btn_post J_qlogin_trigger">发帖</a>
+				<!-- 锁定时间 -->
+								<a rel="nofollow" href="http://www.dayrui.net/bbs-post-reply?tid=7706" data-referer="true" class="btn_replay J_qlogin_trigger">回复</a>
+								<div class="J_page_wrap" data-key="true">
+				<div class="pages" style="margin-right:3px;"><a href="http://www.dayrui.net/list-114-1.html" class="pages_pre" rel="nofollow">« 返回列表</a></div>
+								
+				</div>
+			</div>
+			<div style="display:none;" class="btn_post_menu" id="J_read_post_types">
+				<ul>
+										<li><a href="http://www.dayrui.net/bbs-post-run?fid=114" data-referer="true" class="J_qlogin_trigger">普通帖</a></li>
+									</ul>
+			</div>
+						<!--快速回复-->
+			<div class="floor cc">
+				<table width="100%" style="table-layout:fixed;" class="floor_table">
+					<tbody><tr>
+						<td class="floor_left">
+							<div class="floor_info">
+							<img class="J_avatar" data-type="middle" src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/face_middle.jpg" alt="默认头像">
+							</div>
+						</td>
+						<td class="floor_reply box_wrap">
+							<div class="fl"><div class="floor_arrow"><em></em><span></span></div></div>
+															<div class="reply_login_tips">
+									您需要登录后才可以回帖，<a href="http://www.dayrui.net/show-7706.html#floor_reply" rel="nofollow" class="J_qlogin_trigger">登录</a>&nbsp;或者&nbsp;<a rel="nofollow" href="http://www.dayrui.net/u-register-run">注册</a>
+								</div>
+													</td>
+					</tr>
+				</tbody></table>
+			</div>
+			<!--快速回复结束-->
+						
+			<div id="cloudwind_read_bottom"></div>
+		</div>
+			</div>
+	<!--.main-wrap,#main End-->
+<div class="tac">
+ <br>
+ 
+</div>
+<div class="footer_wrap">
+	<div class="footer">
+		
+		<div class="bottom">
+		<a href="http://www.com.com/">官方网站</a><a href="http://www.dayrui.com/contact/">联系我们</a><a href="http://www.dayrui.com/cms/">FineCMS</a><a href="http://cloud.dayrui.com/">空间域名</a><a href="http://store.dayrui.com/">应用商店</a>		</div>
+		<p>Powered by <a href="http://www.phpwind.net/" target="_blank" rel="nofollow">phpwind v9.0</a> ©2003-2015 <a href="http://www.phpwind.com/" target="_blank" rel="nofollow">phpwind.com</a> <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow"></a></p>
+		<p><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_4290631'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D4290631' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_4290631"><a href="http://www.cnzz.com/stat/website.php?web_id=4290631" target="_blank" title="站长统计">站长统计</a></span><script src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/stat.php" type="text/javascript"></script><script src="./插件开发指南 - 帮助手册 - FineCMS企业版 - Powered by phpwind_files/core.php" charset="utf-8" type="text/javascript"></script></p>
+	</div>
+	 
+	 
+	 
+	<div id="cloudwind_common_bottom"></div>
+	</div>
+
+<!--返回顶部-->
+<a href="http://www.dayrui.net/show-7706.html#" rel="nofollow" role="button" id="back_top" tabindex="-1" style="display: inline;">返回顶部</a>
+
+</div>
+
+<textarea id="J_like_user_ta" class="dn">	&lt;div id="" class="core_pop_wrap" style="position:absolute;"&gt;
+		&lt;div class="core_pop"&gt;
+			&lt;div class="floot_like_pop"&gt;
+				&lt;div class="pop_top"&gt;&lt;a href="#" class="pop_close J_like_user_close"&gt;关闭&lt;/a&gt;最新喜欢&lt;/div&gt;
+				&lt;div class="pop_cont"&gt;
+					&lt;ul class="cc J_like_user_list"&gt;&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+</textarea>
+
+<script>
+var TID = '7706';
+Wind.use('jquery', 'global', 'dialog', function(){
+
+
+	// 阅读页的常用交互
+	Wind.js(GV.JS_ROOT +'pages/bbs/read.js?v='+ GV.JS_VERSION);
+
+	// 投票帖
+	if($('ul.J_vote_item, a.J_vote_list_show').length) {
+		Wind.js(GV.JS_ROOT +'pages/bbs/readVote.js?v='+ GV.JS_VERSION);
+	}
+
+	// 购买记录
+	if($('#J_content_sell, #J_attach_buy, a.J_buy_record, .J_attach_post_del, a.J_attach_post_buy').length) {
+		Wind.js(GV.JS_ROOT + 'pages/bbs/buyRecords.js?v=' + GV.JS_VERSION);
+	}
+
+	//媒体播放
+	if( $('div.J_audio,div.J_video').length ) {
+		Wind.js(window.GV.JS_ROOT + 'pages/bbs/media_play.js?v=' + GV.JS_VERSION);
+	}
+
+
+});
+</script>
+
+
+
+
+</body></html>

@@ -1,0 +1,205 @@
+1.会员扩展模型暂时不用
+（1）MemberController.php中摘除如下
+/*
+ * 会员扩展
+ */
+public function extendAction(Request $request)
+{
+	$mid = (int)$request->get('modelid');
+	$type = $request->get('type');
+	$model = Cache::get('model_member_extend');
+	$model = $model[$mid];
+	$touser = (int)$request->get('touserid');
+dd($model);
+	if (empty($model)) return $this->adminMsg(Tool::lang('a-mod-168', array('1' => $mid)));
+
+	$table = $this->model($model['tablename']);
+
+	switch ($type) {
+		case 'set':    //参数设置
+			if ($this->isPostForm()) {
+				$cfg = $request->get('setting');
+				$data = $request->get('data');
+				$field = array();
+
+				if ($cfg['member']['field']) {
+					foreach ($cfg['member']['field'] as $c => $t) {
+						if ($t) $field[] = $c;
+					}
+					$cfg['member']['field'] = $field;
+				}
+
+				$cfg = array_merge($model['setting'], $cfg);
+
+				$model = app(ModelModel::class);
+				$model->update(array('setting' => array2string($cfg)), 'modelid=' . $mid);
+
+				return $this->adminMsg($this->getCacheCode('model') . Tool::lang('success'), url('admin/member/extend', array('modelid' => $mid, 'type' => 'set', 'touserid' => $touser, 'typeid' => $request->get('typeid'))), 3, 1, 1);
+			}
+
+			$tpl = 'admin/member_extend_config';
+
+			$list_code = '{list table=' . $model['tablename'] . ' order=updatetime num=10}' . PHP_EOL
+				. 'id：{$t[\'id\']}' . PHP_EOL
+				. '{/list}' . PHP_EOL . '<!-- ' . Tool::lang('a-for-12') . ' -->' . PHP_EOL . PHP_EOL
+				. '{sql:' . $model['tablename'] . ' where("' . Tool::lang('a-mod-183') . '")->select(false);}'
+				. PHP_EOL . '<!-- ' . Tool::lang('a-mod-184') . ' -->' . PHP_EOL . PHP_EOL
+				. '{url(\'member/extend\', array(\'modelid\'=>' . $mid . ',\'touserid\'=>' . Tool::lang('a-mod-187') . '))}'
+				. PHP_EOL . '<!-- ' . Tool::lang('a-mod-185') . ' -->';
+
+			$func_code = 'function mycallback($msg, $url, $state) {' . PHP_EOL
+				. '	/*' . Tool::lang('a-mod-193') . '*/' . PHP_EOL
+				. '}' . PHP_EOL . '$msg ：' . Tool::lang('a-mod-194') . PHP_EOL
+				. '$url ：' . Tool::lang('a-mod-195') . PHP_EOL
+				. '$state ：' . Tool::lang('a-mod-196') . PHP_EOL
+				. Tool::lang('a-mod-197');
+
+			$this->assign(array(
+				'typeid' => $request->get('typeid') ? $request->get('typeid') : 1,
+				'list_code' => $list_code,
+				'func_code' => $func_code,
+				'rolemodel' => $this->user->get_role_list(),
+			));
+			break;
+		case 'edit':    //修改
+			$id = (int)$request->get('id');
+			$data = $table->find($id)->toArray();
+
+			if (empty($data)) return $this->adminMsg(Tool::lang('m-con-29'));
+
+			if ($this->isPostForm()) {
+				//模型投稿权限验证
+				if ($this->adminPost($model['setting']['auth'])) return $this->adminMsg(Tool::lang('a-cat-100', array('1' => $this->userinfo['rolename'])));
+
+				$data = $request->get('data');
+				$this->checkFields($this->model['fields'], $data, 1);
+				$data['updatetime'] = time();
+				$table->where('id', $id)->update($data);
+
+				return $this->adminMsg(Tool::lang('success'), '', 3, 1, 1);
+			}
+
+			$this->assign(array(
+				'data' => $data,
+				'fields' => $this->getFields($model['fields'], $data, $model['setting']['member']['field']),
+				'tomember' => get_member_info($data['touserid'])
+			));
+
+			$tpl = 'admin/member_extend_edit';
+			break;
+		default:    //列表数据
+			if ($this->isPostForm() && $request->get('form') == 'search') {
+				$kw = $request->get('kw');
+				$stype = $request->get('stype');
+				$userid = (int)$request->get('userid');
+				$touser = (int)$request->get('touserid');
+
+			} elseif ($this->isPostForm() && $request->get('form') == 'del' && $request->get('ids')) {
+				$ids = implode(',', $request->get('ids'));
+				$table->destroy($ids);
+
+			} elseif ($this->isPostForm() && $request->get('form') == 'status_1' && $request->get('ids')) {
+				$ids = implode(',', $request->get('ids'));
+				$table->whereIn('id', $ids)->update(array('status' => 1));
+
+			} elseif ($this->isPostForm() && $request->get('form') == 'status_0' && $request->get('ids')) {
+				$ids = implode(',', $request->get('ids'));
+				$table->whereIn('id', $ids)->update(array('status' => 0));
+
+			} elseif ($this->isPostForm() && $request->get('form') == 'status_3' && $request->get('ids')) {
+				$ids = implode(',', $request->get('ids'));
+				$table->whereIn('id', $ids)->update(array('status' => 3));
+			}
+
+			$kw = $kw ? $kw : $request->get('kw');
+			$page = $request->get('page') ? $request->get('page') : 1;
+			$stype = $stype ? $stype : (int)$request->get('stype');
+			$userid = $userid ? $userid : (int)$request->get('userid');
+			$status = isset($_GET['status']) ? (int)$request->get('status') : 1;
+			$pagelist = $this->instance('pagelist');
+			$pagelist->loadconfig();
+			$where = '`status`=' . $status;
+
+			if ($userid) $where .= ' AND userid=' . $userid;
+
+			if ($touser) $where .= ' AND touserid=' . $touser;
+
+			if ($kw && $stype && isset($model['fields']['data'][$stype])) $where .= ' AND `' . $stype . '` LIKE "%' . $kw . '%"';
+
+			$total = $table->whereRaw($where)->count();
+			$pagesize = isset($this->site['SITE_ADMIN_PAGESIZE']) && $this->site['SITE_ADMIN_PAGESIZE'] ? $this->site['SITE_ADMIN_PAGESIZE'] : 8;
+
+			$urlparam = array(
+				'kw' => $kw,
+				'page' => '{page}',
+				'type' => $type,
+				'stype' => $stype,
+				'status' => $status,
+				'userid' => $userid,
+				'modelid' => $mid
+			);
+
+			$data = $table->forPage($page, $pagesize)->whereRaw($where)->orderby('updatetime', 'DESC')->orderby('id', 'DESC')->get()->toArray();
+			$pagelist = $pagelist->total($total)->url(url('admin/member/extend') . '?' . http_build_query($urlparam))->num($pagesize)->page($page)->output();
+
+			$this->assign(array(
+				'kw' => $kw,
+				'page' => $page,
+				'list' => $data,
+				'join' => empty($this->join) ? 0 : 1,
+				'count' => $count,
+				'status' => $status,
+				'pagelist' => $pagelist,
+			));
+
+			$tpl = 'admin/member_extend_list';
+			break;
+	}
+
+	$count = array();
+	$count[1] = $table->where('status', 1)->count();
+	$count[0] = $table->where('status', 0)->count();
+	$count[2] = $table->where('status', 2)->count();
+	$count[3] = $table->where('status', 3)->count();
+
+	if (isset($total)) $count[$status] = $total;
+
+	$this->assign(array(
+		'count' => $count,
+		'model' => $model,
+		'modelid' => $mid,
+		'touserid' => $touser
+	));
+
+	return $this->display($tpl);
+}
+
+2.栏目管理的批量生成url规则不用
+/**
+ * 批量URL规则
+ */
+public function urlAction(Request $request)
+{
+	if ($request->get('submit')) {
+		$count = 0;
+		$catids = $request->get('catids');
+		if (empty($catids)) {
+			return $this->adminMsg(Tool::lang('a-cat-9'));
+		}
+
+		foreach ($catids as $catid) {
+			if ($catid && isset($this->cats[$catid])) {
+				$setting = $this->cats[$catid]['setting'];
+				$setting['url'] = $request->get('url');
+				$setting = array2string($setting);
+				$this->category->where('catid', $catid)->update(array('setting' => $setting));
+				$count++;
+			}
+		}
+
+		return $this->adminMsg($this->getCacheCode('category') . Tool::lang('a-cat-10', array('1' => $count)), url('admin/category'), 3, 1, 1);
+	}
+
+	$this->assign('category', $this->tree->get_tree($this->cats));
+	return $this->display('admin/category_url');
+}
