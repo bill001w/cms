@@ -34,10 +34,10 @@
                         @foreach($memberconfig['oauth'] as $name => $t)
                         @if($t['appid'] && $t['appkey'])
 
-                        <a href="{{ url("member/login/oauth", array("name"=>$name)) }}"><img src="{{ SITE_THEME }}images/{{ strtolower($name)}}_login.gif" align="absmiddle" border="0"></a>&nbsp;&nbsp;
+                        <a href="{{ url("member/login/oauth", array("name"=>$name)) }}"><img src="/views/admin/images/{{ strtolower($name)}}_login.gif" align="absmiddle" border="0"></a>&nbsp;&nbsp;
                         @endif
 
-                        @end
+                        @endforeach
                         </div>
                         @endif
 

@@ -13,7 +13,7 @@
                 <li @if($n==$a)
  class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -72,7 +72,7 @@ checked=""@endif
                         <td><input name="data[{{ $t['id'] }}][tel]" type="text" size="12" value="{{ $t['tel'] }}" class="input-text" /></td>
                         <td><input name="data[{{ $t['id'] }}][address]" type="text" size="40" value="{{ $t['address'] }}" class="input-text" /></td>
                       </tr>
-                      @end
+                      @endforeach
                     </tbody>
                 </table>
 				<div class="datatablepage">

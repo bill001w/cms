@@ -63,7 +63,7 @@ function ctab(id) {
 
                     <li>会员模型：<select name="data[modelid]" style="height:29px;"> @foreach($membermodel as $t)<option value="{{ $t['modelid'] }}" @if($memberconfig['modelid']==$t['modelid'])
 selected@endif
->{{ $t['modelname'] }}</option>@end </select>
+>{{ $t['modelname'] }}</option>@endforeach </select>
                     </li>
                     @endif
 

@@ -14,7 +14,7 @@
                 <li @if($n && $modelid==$n)
 class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -51,7 +51,7 @@ class="on"@endif
 							<a href="javascript:;" onClick="if(confirm('删除将会扣除一定的积分，确定吗？')){ window.location.href='{{ url('member/content/del/', array('id'=>$t['id'])) }}'; }">删除</a>
 							</td>
 						</tr>
-						@end
+						@endforeach
                     </tbody>
                 </table>
                 <div class="datatablepage">

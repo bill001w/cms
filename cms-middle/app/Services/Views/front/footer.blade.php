@@ -8,7 +8,7 @@
 		<a href="{{ $t['url'] }}">{{ $t['catname'] }}</a>
 		@endif
 
-		@end
+		@endforeach
 		<a href="{{ url('member') }}">会员中心</a>
 		<a href="http://www.finecms.net" target="_blank">技术支持</a>
 		<a href="http://bbs.finecms.net" target="_blank" style="border-right:0px;">技术论坛</a>

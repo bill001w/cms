@@ -14,7 +14,7 @@
                 <li @if($n && $form['tablename']==$n)
  class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -84,7 +84,7 @@ class="select"@endif
 
 							</td>
 						</tr>
-					@end
+					@endforeach
                     </tbody>
                 </table>
                 <div class="datatablepage">

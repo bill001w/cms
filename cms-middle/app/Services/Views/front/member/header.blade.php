@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>{{ $meta_title }}</title>
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
-<link href="{{ SITE_THEME }}member/images/style.css" rel="stylesheet" type="text/css" />
+<link href="/views/admin/member/images/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/views/admin/js/jquery.min.js"></script>
 </head>
 <body>
@@ -57,7 +57,7 @@
 			<li><a href="{{ $t['url'] }}"><span>{{ $t['catname'] }}</span></a></li>
 			@endif
 
-			@end
+			@endforeach
             @endif
 
             </ul>

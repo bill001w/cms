@@ -35,7 +35,7 @@
               <a href="javascript:if (confirm('您确实要把该商品移出购物车吗？')) location.href='{{ url('shop/cart/del', array('cartid'=>$cartid)) }}'; ">删除</a>
               </td>
             </tr>
-            @end
+            @endforeach
             <tr>
               <td colspan="2" align="left">购物金额小计 ￥{{ $total_price }}元</td>
               <td colspan="4" align="right">

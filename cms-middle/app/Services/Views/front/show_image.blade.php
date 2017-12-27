@@ -11,14 +11,14 @@
         <div class="picnrbox">
             <div class="showpic">
                <script type="text/javascript">
-                   var imgArr='@foreach($images["file"] as $t){{ image($t) }}|@end'.split('|');
-                   var introArr='@foreach($images["alt"] as $t){{ $t }}|@end'.split('|');
-                   var siteurl='{{ SITE_THEME }}';
+                   var imgArr='@foreach($images["file"] as $t){{ image($t) }}|@endforeach'.split('|');
+                   var introArr='@foreach($images["alt"] as $t){{ $t }}|@endforeach'.split('|');
+                   var siteurl='/views/admin/';
                    var totalput={{ count($images["file"]) }};
                    var currPage=1; 
                    var iss=1;//当前张数
                </script>
-               <script type="text/javascript" src="{{ SITE_THEME }}js/photo.js"></script>
+               <script type="text/javascript" src="/views/admin/js/photo.js"></script>
                <div class="imagelist">
                    <div class="imagetop">
                        共 <span style="color:red">{{ count($images["file"]) }}</span> 张,当前第 <span style="color:#ff6600" id="currpa">1</span> 张 <a href="javascript:prev()">上一张</a> | <a href="javascript:next()">下一张</a><span id="displayNum"></span>
@@ -35,7 +35,7 @@
                             <ul id="scrool_wrap">
                             @foreach($images['file'] as $k => $t)
                             <li><a id="t{{ $k+1 }}" class="currthumb" href="javascript:void(0)" onclick="showImg({{ $k+1 }});"><img src="{{ thumb($t) }}" border="0"/></a></li>
-                            @end
+                            @endforeach
                             </ul>
                             </div>
                             <!--缩略图结束-->

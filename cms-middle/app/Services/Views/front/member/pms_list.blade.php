@@ -15,7 +15,7 @@
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}@if($n=='inbox' && $inbox)
 ({{ $inbox }})@endif
 </a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -49,7 +49,7 @@
                         <td>{{ date("Y-m-d H:i:s", $t['sendtime']) }}</td>
                         <td><a href="{{ url("member/pms/read/", array("id"=>$t['id'])) }}" title="阅读">阅读</a></td>
                       </tr>
-                      @end
+                      @endforeach
                     </tbody>
                 </table>
                 <div class="datatablepage">

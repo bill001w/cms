@@ -17,7 +17,7 @@
                  <a @if($t['catid']==$catid)
 class="select"@endif
  href="{{ $t['url'] }}">{{ $t['catname'] }}</a>
-                  @end
+                  @endforeach
                 </div>
            @else
 
@@ -39,7 +39,7 @@ class="select"@endif
 				<a@if($page!=$i)
  href="{{ $u }}"@endif
 >{{ $i }}</a>
-				@end
+				@endforeach
 				</div>
 				<div class="clear blank10"></div>
 				@endif

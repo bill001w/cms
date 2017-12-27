@@ -13,7 +13,7 @@
                 <li @if($n==$a)
  class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -45,7 +45,7 @@
                         <td>{{ $t['oauth_name'] }}</td>
                         <td><a href="{{ url("member/info/jie/", array("id"=>$t['id'])) }}">解除绑定</a></td>
                       </tr>
-                      @end
+                      @endforeach
                     </tbody>
                 </table>
               </form>

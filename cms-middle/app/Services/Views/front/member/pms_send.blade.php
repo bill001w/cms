@@ -22,7 +22,7 @@ function checkuser() {
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}@if($n=='inbox' && $inbox)
 ({{ $inbox }})@endif
 </a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>

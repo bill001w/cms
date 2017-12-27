@@ -27,7 +27,7 @@
                     <a@if($page!=$i)
  href="{{ $u }}"@endif
 >{{ $i }}</a>
-                    @end
+                    @endforeach
                     </div>
                     <div class="clear blank10"></div>
                     @endif
@@ -39,7 +39,7 @@
 						<div class="articlekey"><strong>TAG：</strong>
 						@foreach($kws as $t)
 						<a href="{{ tag_url($t) }}">{{ $t }}</a>
-						@end
+						@endforeach
 						</div>
                     @endif
 

@@ -40,7 +40,7 @@
                <div class="downbox2">
                 @foreach($tupian['file'] as $k => $t)
                      <img src="{{ image($t) }}" /> <br>
-                @end
+                @endforeach
                </div>
             </div>
             <div class="clear blank10"></div>

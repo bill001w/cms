@@ -33,8 +33,8 @@
 <!--已经登录-->
                     <!--这里还有对会员组，积分，会员模型判断是否能下载-->
                     @foreach($downdata['file'] as $k => $file)
-                    {{ $title }}<img border="0" align="absmiddle" src="{{ SITE_THEME }}images/down.gif"><a href="{{ downfile($file) }}">{{ $downdata['alt'][$k] }}</a><br>   
-                    @end
+                    {{ $title }}<img border="0" align="absmiddle" src="/views/admin/images/down.gif"><a href="{{ downfile($file) }}">{{ $downdata['alt'][$k] }}</a><br>   
+                    @endforeach
                 @else
 <!--没有登录时，不允许下载-->
                      <a href="{{ url('member/login',array('back'=>urlencode($url))) }}">对不起，请登录以后再下载。</a>

@@ -1,10 +1,10 @@
-@include('header')
+@include('front.header')
 <div class="mainbox">
     <div class="left">
         <!--left01 begin-->
         <div class="left01">
             <div class="floatl">
-                <script type='text/javascript' src='{{ SITE_THEME }}js/KinSlideshow.js'></script>
+                <script type='text/javascript' src='/views/admin/js/KinSlideshow.js'></script>
                 <script type="text/javascript">
                     $(function () {
                         $("#KinSlideshow").KinSlideshow({
@@ -78,7 +78,7 @@
                 <span id="btn_focus_next" class="btn"></span>
                 <span id="btn_focus_prev" class="btn"></span>
             </div>
-            <script type='text/javascript' src='{{ SITE_THEME }}js/pic_roll.js'></script>
+            <script type='text/javascript' src='/views/admin/js/pic_roll.js'></script>
             <script type="text/javascript">
                 $(function () {
                     var clearTimer = null;
@@ -138,17 +138,14 @@
                 </div>
                 <div class="clear blank10"></div>
         @endif
-
         <?php $i++; ?><!--循环控制变量自增-->
     @endif
-
-    @end
+    @endforeach
     @if($i%2==1)
         <!--如果栏目数不是偶数，就结束div盒-->
     </div>
     <div class="clear blank10"></div>
 @endif
-
 <!--栏目循环 end-->
 </div>
 <div class="right">
@@ -202,20 +199,5 @@
     <div class="clear blank10"></div>
 </div>
 </div>
-@if(plugin('link'))
-    <!--判断友情链接插件是否存在，若存在就执行下面的-->
-    <div class="clear blank10"></div>
-    <!--友情链接-->
-    <div class="friendlink">
-        <div class="title"><span id="tit">友情链接</span></div>
-        <div class="linkbox">
-            {list table=link.link order=listorder_asc cache=36000}<!--循环输出友情链接数据，list教程有详细介绍-->
-            <a href="{{ $t['url'] }}" target="_blank" title="{{ $t['introduce'] }}">{{ $t['name'] }}</a>&nbsp;&nbsp;&nbsp;
-            {/list}
-        </div>
-    </div>
-    <!--友情链接end-->
-@endif
-
 <div class="clear blank10"></div>
-@include('footer')
+@include('front.footer')

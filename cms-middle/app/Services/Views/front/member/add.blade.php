@@ -26,7 +26,7 @@ function ajaxtitle() {
                 <li @if($n && $modelid==$n)
 class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>

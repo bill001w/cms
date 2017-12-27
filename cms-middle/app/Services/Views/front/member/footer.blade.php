@@ -7,7 +7,7 @@
     <a href="{{ $t['url'] }}"><span>{{ $t['catname'] }}</span></a>
     @endif
 
-    @end
+    @endforeach
   </p>
   <p>Powered by {{ CMS_NAME }} v{{ CMS_VERSION }} © 2012,Processed in {{ runtime() }} second(s).</p>
 </div>

@@ -4,10 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
 <title>{{ $meta_title }}</title>
-<link href="{{ SITE_THEME }}images/search.css" rel="stylesheet" />
+<link href="/views/admin/images/search.css" rel="stylesheet" />
 <script type="text/javascript" src="/views/admin/js/jquery.min.js"></script>
 <script type="text/javascript">var sitepath = "{{ SITE_PATH }}{{ ENTRY_SCRIPT_NAME }}";</script>
-<script type="text/javascript" src="{{ SITE_THEME }}js/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="/views/admin/js/jquery.autocomplete.js"></script>
 <script type="text/javascript">
 $(function(){
 	$("#query").focus();
@@ -55,12 +55,12 @@ function search_post() {
             <a href="{{ $t['url'] }}">{{ $t['catname'] }}</a> &nbsp;
             @endif
 
-            @end
+            @endforeach
         </div>
         <div class="c-sust"><script type="text/javascript" src="{{ url('api/user') }}"></script></div>
     </div>
     <div class="c-header ">
-        <div class="c-logo"><a href="{{ SITE_PATH }}"><img src="{{ SITE_THEME }}images/logo.png" width="147" height="37"></a></div>
+        <div class="c-logo"><a href="{{ SITE_PATH }}"><img src="/views/admin/images/logo.png" width="147" height="37"></a></div>
         <form method="get" action="" class="c-fm-w" onSubmit="return search_post()">
         <span class="s-inpt-w" >
         <input type="text" class="s-inpt" autocomplete="off" name="q" id="query" value="" />
@@ -104,7 +104,7 @@ function search_post() {
                             </div>
                         </div>
                         </li>
-                    @end
+                    @endforeach
                     </ol>
                 @endif
 
@@ -130,7 +130,7 @@ function search_post() {
                 <li><a href="{{ url('content/search', array('kw'=>urldecode($kw), 'modelid'=>$t['modelid'])) }}" @if($modelid==$t['modelid'])
  style="font-weight:bold"@endif
 >{{ $t['modelname'] }}</a></li>
-                @end
+                @endforeach
                 </ul>
                 </div>
             </div>

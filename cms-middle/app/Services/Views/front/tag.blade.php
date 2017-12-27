@@ -14,7 +14,7 @@
                 @if(($key+1)%5==0)
 <li class="page-list" style="background:none"></li>@endif
 <!--每5行加一段分行代码-->
-                @end
+                @endforeach
                 </ul>
                 <div class="listpage" style="padding-left:10px;">{{ $tagpage }}</div>
 		   </div>

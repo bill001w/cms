@@ -39,7 +39,7 @@ class="b"@endif
                         <li><a href="{{ list_url($param, 'area', $t['id']) }}" @if($param['area']==$t['id'])
 class="b"@endif
 >{{ $t['name'] }}</a></li>
-                        @end
+                        @endforeach
                         </ul>
                         <ul>
                         <li><a href="{{ list_url($param, 'room', '') }}" @if(empty($param['room']))
@@ -50,7 +50,7 @@ class="b"@endif
                         <li><a href="{{ list_url($param, 'room', $t) }}" @if($param['room']==$t)
 class="b"@endif
 >{{ $k }}</a></li>
-                        @end
+                        @endforeach
                         </ul>
                         <ul>
                         <li><a href="{{ list_url($param, 'price', '') }}" @if(empty($param['price']))
@@ -61,7 +61,7 @@ class="b"@endif
                         <li><a href="{{ list_url($param, 'price', $t) }}" @if($param['price']==$t)
 class="b"@endif
 >{{ $k }}</a></li>
-                        @end
+                        @endforeach
                         </ul>
                     </div>
                     <div class="blank10 clear select-bottom"></div>

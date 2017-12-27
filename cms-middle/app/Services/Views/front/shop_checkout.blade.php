@@ -31,7 +31,7 @@
               <td align="left">￥<?php echo $t['item_price']*$t['num'] ?>元</td>
             </tr>
             <?php $total_price += $t['item_price']*$t['num']; ?>
-            @end
+            @endforeach
             </tbody>
             </table>
             <div class="j-pdt" style="margin:10px 0 10px 0"><h2>确认收货地址</h2></div>
@@ -58,7 +58,7 @@ checked=""@endif
               <td align="left">{{ $t['zip'] }}</td>
               <td align="left">{{ $t['address'] }}</td>
             </tr>
-            @end
+            @endforeach
             @else
 
             <tr>
@@ -93,7 +93,7 @@ checked=""@endif
               <td align="left">￥{{ $t['price'] }}元</td>
               <td align="left">{{ $t['description'] }}</td>
             </tr>
-            @end
+            @endforeach
             </tbody>
             </table>
             <script language="javascript">

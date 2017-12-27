@@ -6,7 +6,7 @@
     <div class="picmain">
 	    <div class="left">
 		    <div class="floatl">
-				<script type='text/javascript' src='{{ SITE_THEME }}js/KinSlideshow.js'></script>
+				<script type='text/javascript' src='/views/admin/js/KinSlideshow.js'></script>
 				<script type="text/javascript">
 				$(function(){
 					$("#KinSlideshow").KinSlideshow({
@@ -63,7 +63,7 @@
         </div>
     @endif
 
-    @end
+    @endforeach
     </div>
     <div class="clear blank10"></div>
 @include('footer')

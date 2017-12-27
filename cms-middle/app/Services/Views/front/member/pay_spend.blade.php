@@ -13,7 +13,7 @@
                 <li @if($n==$a)
  class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -53,7 +53,7 @@ style="color:red;font-weight:bold"@endif
                         <td><span style="color:red;font-weight:bold;">-{{ $t['money'] }}</span></td>
                         <td>{{ $t['note'] }}</td>
                       </tr>
-                      @end
+                      @endforeach
                     </tbody>
                 </table>
                 <div class="datatablepage">

@@ -43,7 +43,7 @@ class="floatr"@endif
             @endif
 
 
-            @end
+            @endforeach
             @if($i%2==1)
 <!--如果栏目数不是偶数，就结束div盒-->
             </div>

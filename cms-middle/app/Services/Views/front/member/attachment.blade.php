@@ -16,7 +16,7 @@
                 <li @if($n==='attachment')
  class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -76,7 +76,7 @@ javascript:fileview_{{ $k }}();@endif
 				<a onClick="del('{{ $t['dir'] }}',{{ $t['isdir'] }})" href="javascript:;">删除</a>
 				 </td></tr>
 				<tr>
-				@end
+				@endforeach
 				</tbody>
 				</table>
 

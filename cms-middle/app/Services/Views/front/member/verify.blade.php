@@ -14,7 +14,7 @@
                 <li @if($n==='verify')
 class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -49,7 +49,7 @@ class="on"@endif
 						<a href="javascript:;" onClick="if(confirm('确定删除吗？')){ window.location.href='{{ url('member/content/delverify/', array('id'=>$t['id'])) }}'; }">删除</a>
 						</td>
 					</tr>
-				@end
+				@endforeach
 				</tbody>
                 </table>
                 <div class="datatablepage">

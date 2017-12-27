@@ -13,7 +13,7 @@
                 <li @if($n==$a)
  class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -43,7 +43,7 @@
 					@if($t['use'])
 <input type="radio" value="{{ $name }}" name="data[paytype]">{{ $t['name'] }}&nbsp;&nbsp;&nbsp;&nbsp;@endif
 
-					@end
+					@endforeach
 					</td>
                 </tr>
                 <tr>

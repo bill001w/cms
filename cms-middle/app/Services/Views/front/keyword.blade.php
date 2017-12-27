@@ -9,7 +9,7 @@
 	        <div class='maplist'>
 			@foreach($keyword as $t)
 			<span><a href="{{ tag_url($t['name']) }}">{{ $t['name'] }}</a></span>
-			@end
+			@endforeach
 		    </div>
 		</div>
 	</div>

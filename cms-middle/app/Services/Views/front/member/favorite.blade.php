@@ -13,7 +13,7 @@
                 <li @if($n==$a)
  class="on"@endif
 ><a href="{{ $t['url'] }}">{{ $t['name'] }}</a></li>
-            @end
+            @endforeach
 			</ul>
 			</div>
         </div>
@@ -38,7 +38,7 @@
                         <td>{{ date("Y-m-d H:i:s", $t['adddate']) }}</td>
                         <td><a href="{{ $t['url'] }}" target="_blank" title="访问">访问</a></td>
                       </tr>
-                      @end
+                      @endforeach
                     </tbody>
                 </table>
                 <div class="datatablepage">
