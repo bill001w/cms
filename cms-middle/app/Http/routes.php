@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/test', function () {
     return view('welcome');
 });
+
+Route::group(['namespace' => 'front', 'as' => 'front'], function () {
+    Route::group(['as' => '/index/'], function () {
+        Route::get('', ['as' => '', 'uses' => 'IndexController@indexAction']);
+    });
+});
+
 
 // 后台登录
 Route::match(['get', 'post'], 'admin/login', ['as' => 'admin/login/index', 'uses' => 'admin\LoginController@indexAction']);
@@ -148,3 +155,4 @@ Route::group(['prefix' => 'admin', 'namespace' => 'admin', 'as' => 'admin', 'mid
         Route::post('ajaxusername', ['as' => '/ajaxusername', 'uses' => 'MemberController@ajaxusernameAction']);
     });
 });
+
