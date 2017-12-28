@@ -9,7 +9,7 @@ return array(
 	'SITE_EXTEND_ID'          => '0',  //
 	'SITE_LANGUAGE'           => 'zh-cn',  //
 	'SITE_TIMEZONE'           => '8',  //
-	'SITE_THEME'              => 'new',  //
+	'SITE_THEME'              => 'default',  //
 	'SITE_NAME'               => 'finecms',  //
 	'SITE_TITLE'              => 'finecms',  //
 	'SITE_KEYWORDS'           => 'finecms',  //
