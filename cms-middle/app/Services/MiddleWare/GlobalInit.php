@@ -2,8 +2,7 @@
 
 namespace App\Services\Middleware;
 
-use App\Services\Core\Basic;
-use App\Services\Core\Lang;
+use App\Services\Core\LoadConfiguration;
 use Closure;
 
 class GlobalInit
@@ -12,8 +11,10 @@ class GlobalInit
     {
         error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING ^ E_STRICT);
 
+        new LoadConfiguration(app_path('Services' . DIRECTORY_SEPARATOR . 'Config'));
+        $config = config('config.ini');
+
         define('APP_ROOT', app_path('Services') . DIRECTORY_SEPARATOR);
-        $config = require APP_ROOT . 'Config/config.ini.php';
 
         //设置程序开始执行时间
         define('SYS_START_TIME', microtime(true));
@@ -35,23 +36,23 @@ class GlobalInit
         date_default_timezone_set(SYS_TIME_ZONE);
         //输出时间格式化
         define('TIME_FORMAT', isset($config['SITE_TIME_FORMAT']) && $config['SITE_TIME_FORMAT'] ? $config['SITE_TIME_FORMAT'] : 'Y-m-d H:i:s');
+
         //网站语言设置
-        define('SYS_LANGUAGE', isset($config['SITE_LANGUAGE']) && $config['SITE_LANGUAGE'] ? $config['SITE_LANGUAGE'] : 'zh-cn');
-        //网站语言文件
-        define('LANGUAGE_DIR', APP_ROOT . 'Language' . DIRECTORY_SEPARATOR . SYS_LANGUAGE . DIRECTORY_SEPARATOR);
-        if (!file_exists(LANGUAGE_DIR)) {
+        $sysLang = APP_ROOT . 'Language' . DIRECTORY_SEPARATOR . (isset($config['SITE_LANGUAGE']) && $config['SITE_LANGUAGE'] ? $config['SITE_LANGUAGE'] : 'zh-cn') . DIRECTORY_SEPARATOR;
+        if (!file_exists($sysLang)) {
             exit('语言目录不存在：' . LANGUAGE_DIR);
         }
-        $language = require LANGUAGE_DIR . 'lang.php';
-        if (file_exists(LANGUAGE_DIR . 'custom.php')) {
-            $custom_lang = require LANGUAGE_DIR . 'custom.php';
+        $language = require $sysLang . 'lang.php';
+        if (file_exists($sysLang . 'custom.php')) {
+            $custom_lang = require $sysLang . 'custom.php';
             $language = array_merge($language, $custom_lang);
         }
-        // todo 禁止访问--------
-        Basic::$config = $config;
-        Basic::$language = $language;
-        Basic::$lang = new Lang();
+        app()->instance('language', $language);
 
+
+        // todo 禁止访问--------
+
+        // 数据库查询返回数组
         \DB::setFetchMode(\PDO::FETCH_ASSOC);
 
         return $next($request);

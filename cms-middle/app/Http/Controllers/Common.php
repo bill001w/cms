@@ -2,7 +2,6 @@
 namespace App\Http\Controllers;
 
 use App\Services\Core\App;
-use App\Services\Core\Basic;
 use App\Services\Core\View;
 use App\Services\dayrui\libraries\cache_file;
 use App\Services\drivers\ControllerTool;
@@ -46,10 +45,7 @@ class Common extends Controller
 
     public function __construct(Request $request)
     {
-        $this->config = Basic::$config;
-        $this->language = Basic::$language;
-        $this->lang = Basic::$lang;
-
+        $this->config = config('config.ini');
         $this->input = $request;
         $this->session = $this->input->session();
         $this->cache = new cache_file();
