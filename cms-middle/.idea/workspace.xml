@@ -24,6 +24,10 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="572">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+=======
             <state relative-caret-position="150">
               <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding />
@@ -48,8 +52,14 @@
       <file leaf-file-name="Common.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="750">
               <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+=======
+            <state relative-caret-position="198">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="21" />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
               <folding>
                 <element signature="e#39#65#0#PHP" expanded="true" />
                 <marker date="1514341066252" expanded="true" signature="12225:12237" ph="..." />
@@ -170,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,6 +191,9 @@
           </PATH>
         </subPane>
       </pane>
+=======
+      <pane id="Scratches" />
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -187,6 +201,8 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
             <PATH_ELEMENT USER_OBJECT="cms-middle">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -333,6 +349,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
           </PATH>
         </subPane>
       </pane>
@@ -449,15 +466,31 @@
       <workItem from="1510796386966" duration="588000" />
       <workItem from="1512957785680" duration="91000" />
       <workItem from="1514339524396" duration="1242000" />
+<<<<<<< HEAD
+      <workItem from="1514465742040" duration="250000" />
+=======
       <workItem from="1514343240183" duration="14130000" />
       <workItem from="1514429919953" duration="1392000" />
+<<<<<<< HEAD
       <workItem from="1514446017941" duration="4412000" />
       <workItem from="1514511232280" duration="52000" />
+=======
+      <workItem from="1514446017941" duration="4335000" />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="279893000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="260157000" />
+=======
+    <option name="totallyTimeSpent" value="279764000" />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -470,12 +503,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+<<<<<<< HEAD
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24466951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60780066" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -487,7 +533,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60780066" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60784316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -817,27 +867,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/front/FrontController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-423">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+=======
         <state relative-caret-position="675">
           <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#46#78#0#PHP" expanded="true" />
+            <marker date="1514368831160" expanded="true" signature="3015:3168" ph="select * fro... *" />
+            <marker date="1514368831160" expanded="true" signature="3030:3117" ph="select * fro... ${$this-&gt;ci-&gt;db-&gt;dbprefix}" />
+          </folding>
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/TagController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="26">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="25" />
+=======
         <state relative-caret-position="810">
           <caret line="66" column="42" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="42" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#46#89#0#PHP" expanded="true" />
+            <marker date="1514341066269" expanded="true" signature="472:532" ph="select * fro... ${$this-&gt;db_prefix}" />
+          </folding>
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/libs/function.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="26">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+=======
         <state relative-caret-position="810">
           <caret line="203" column="9" selection-start-line="203" selection-start-column="9" selection-end-line="203" selection-end-column="9" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <marker date="1514341067946" expanded="true" signature="270:2738" ph="..." />
+            <marker date="1514341067946" expanded="true" signature="348:2727" ph="..." />
+            <marker date="1514341067946" expanded="true" signature="408:1078" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="832:1063" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="950:1045" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="1126:1475" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="1171:1372" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="1686:2380" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="1756:2366" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="1818:2150" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="1902:2121" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="1953:2095" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="2188:2242" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="2280:2348" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="2404:2709" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="2596:2695" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="43497:44087" ph="..." />
+            <marker date="1514341067946" expanded="true" signature="43515:44076" ph="{...}" />
+            <marker date="1514341067946" expanded="true" signature="43836:44070" ph="{...}" />
+          </folding>
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/Core/View.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-2496">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
         <state relative-caret-position="25">
           <caret line="445" column="0" selection-start-line="445" selection-start-column="0" selection-end-line="445" selection-end-column="0" />
           <folding>
@@ -996,36 +1104,84 @@
             <marker date="1514341066486" expanded="false" signature="12682:12769" ph="select * fro... ${$this-&gt;ci-&gt;db-&gt;dbprefix}" />
             <marker date="1514341066486" expanded="false" signature="31894:32130" ph="select * fro... ${$this-&gt;ci-&gt;db-&gt;dbprefix('content_' . App::get_site_id())}" />
           </folding>
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/Models/ModelModel.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="182">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+=======
         <state relative-caret-position="50">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="29" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <marker date="1514341066622" expanded="true" signature="968:1026" ph="DELETE FROM " />
+          </folding>
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-1638">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+=======
         <state relative-caret-position="150">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="575">
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="78">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/front/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#46#78#0#PHP" expanded="true" />
+=======
+        <state relative-caret-position="-2875">
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#45#77#0#PHP" expanded="true" />
             <marker date="1514341066254" expanded="true" signature="11982:12096" ph="select count... ${$this-&gt;db_prefix}" />
             <marker date="1514341066254" expanded="true" signature="12215:12329" ph="select count... ${$this-&gt;db_prefix}" />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/Services/Core/Basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+=======
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -1039,6 +1195,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/Services/Core/Basic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1047,6 +1204,9 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
+>>>>>>> f6a9c6a209c53dfb3c354803340a8ed896be8840
   </component>
   <component name="masterDetails">
     <states>

@@ -127,6 +127,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -173,10 +177,13 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,13 +279,26 @@
       <workItem from="1510198816044" duration="3403000" />
       <workItem from="1510315465382" duration="1803000" />
       <workItem from="1514340042647" duration="641000" />
+<<<<<<< HEAD
+      <workItem from="1514465963486" duration="28000" />
+=======
       <workItem from="1514359756714" duration="3346000" />
       <workItem from="1514370839160" duration="11000" />
       <workItem from="1514431900016" duration="450000" />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="79860000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
     <option name="totallyTimeSpent" value="83639000" />
   </component>
   <component name="ToolWindowManager">
@@ -286,6 +306,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 11c8036252143593aa2d40301f9c8bcc22255c30
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

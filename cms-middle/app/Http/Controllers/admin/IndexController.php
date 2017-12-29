@@ -148,7 +148,7 @@ class IndexController extends Admin
             $content = "<?php"
                 . PHP_EOL . PHP_EOL
                 . "/**" . PHP_EOL . " * 应用程序配置信息" . PHP_EOL . " */" . PHP_EOL
-                . "return array(" . PHP_EOL . PHP_EOL;
+                . "return [" . PHP_EOL . PHP_EOL;
 
             $configdata = $request->get('data');
             foreach ($configdata as $var => $val) {
@@ -156,7 +156,7 @@ class IndexController extends Admin
                 $content .= "	'" . strtoupper($var) . "'" . $this->setspace($var) . " => " . $value . ",  //" . $string[$var] . PHP_EOL;
             }
 
-            $content .= PHP_EOL . ");";
+            $content .= PHP_EOL . "];";
             file_put_contents(APP_ROOT . 'Config/config.ini.php', $content);
 
             return $this->adminMsg(lang('success'), url('admin/index/config', array('type' => $this->get('type'))), 3, 1, 1);

@@ -2,7 +2,6 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Common;
-use App\Services\libraries\auth;
 use App\Services\models\userModel;
 use Illuminate\Http\Request;
 

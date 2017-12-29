@@ -149,11 +149,11 @@ return array(
 		'name' => '微信公众号',
 		'icon' => 'weixin',
 		'menu' => array(
-			array('name' => lang('dr019'), 'url' => url('admin/wx/config'),    'icon' => 'cog'),
-			array('name' => lang('dr020'), 'url' => url('admin/wx/index'),    'icon' => 'weixin'),
-			array('name' => lang('dr021'), 'url' => url('admin/wx/keyword'),    'icon' => 'tag'),
-			array('name' => lang('dr023'), 'url' => url('admin/wx/menu'),    'icon' => 'table'),
-			array('name' => lang('dr024'), 'url' => url('admin/wx/user'),    'icon' => 'user'),
+//			array('name' => lang('dr019'), 'url' => url('admin/wx/config'),    'icon' => 'cog'),
+//			array('name' => lang('dr020'), 'url' => url('admin/wx/index'),    'icon' => 'weixin'),
+//			array('name' => lang('dr021'), 'url' => url('admin/wx/keyword'),    'icon' => 'tag'),
+//			array('name' => lang('dr023'), 'url' => url('admin/wx/menu'),    'icon' => 'table'),
+//			array('name' => lang('dr024'), 'url' => url('admin/wx/user'),    'icon' => 'user'),
 		)
 	),
 );
